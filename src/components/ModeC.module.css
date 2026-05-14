@@ -1,0 +1,84 @@
+.cards {}
+
+.stage {
+  margin-bottom: 1rem;
+}
+
+.stageLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  border-color: var(--green);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.selected {
+  border-color: var(--green) !important;
+  background: var(--green-light) !important;
+}
+
+.dim {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.cardIcon {
+  font-size: 34px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cardDesc {
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.4;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 0;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.dividerText {
+  font-size: 11px;
+  color: var(--text3);
+}
